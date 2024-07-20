@@ -1,0 +1,3 @@
+GH_USER = ""
+GH_API_TOKEN=""
+GH_TG_TOKEN=""
