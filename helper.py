@@ -1,6 +1,20 @@
 import json
 import os 
 import requests 
+import random
+
+RANDOM_GRADIENT = [
+    "linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb)",
+    "linear-gradient(to right, #f12711, #f5af19)",
+    "linear-gradient(to right, #da4453, #89216b)",
+    "linear-gradient(to right, #ff512f, #dd2476)",  
+    "linear-gradient(to right, #c31432, #240b36)",
+    "linear-gradient(to right, #654ea3, #eaafc8)",
+    "linear-gradient(to right, #ff416c, #ff4b2b)",
+    "linear-gradient(to right, #00b4db, #0083b0)",
+    "linear-gradient(to right, #f83600, #f9d423)",
+    "linear-gradient(to right, #ff9966, #ff5e62)",
+]
 def generate_json_file(name, title, description,email,profile_pic):
     data = {
         "name": name,
@@ -8,6 +22,7 @@ def generate_json_file(name, title, description,email,profile_pic):
         "description": description,
         "email":email,
         "profile_pic": profile_pic,
+        "background": random.choice(RANDOM_GRADIENT)
     }
     with open(f"templates/data.json", "w") as file:
         json.dump(data, file)
