@@ -1,0 +1,17 @@
+body {
+    background: linear-gradient(to right, #9c27b0, #e040fb);
+    color: #ffffff; /* Text Color */
+}
+
+.custom-logo, .highlight, .title {
+    color: #ff80ab; /* Highlighted Text Color */
+}
+
+.profile-img, .custom-logo {
+    border-color: #ff80ab; /* Matching border color */
+}
+
+.profile-img{
+    border-radius: 40% 60% 55% 45% / 45% 55% 60% 40%;
+
+}
