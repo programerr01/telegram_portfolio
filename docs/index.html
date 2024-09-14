@@ -8,14 +8,62 @@
     <meta name="keywords" content="Telegram, web development, portfolio, personal site">
     <meta name="author" content="Your Name">
     <title>Telegram Portfolio</title>
-    <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Your content goes here -->
-    
-    <h3> Deploy your portfolio site from telegram with just few queries</h3>
-</body>
+    <nav class="flex items-center justify-between bg-gray-900 py-4 px-6">
+        <div class="text-white font-bold text-lg">Telegram Portfolio</div>
+        <div class="flex items-center">
+            <div class="mr-4">
+                <a href="https://github.com/programerr01/telegram_portfolio" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-400 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.258.793-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C3.29 18.14 2.54 17.8 2.54 17.8c-1.087-.744.083-.729.083-.729 1.204.084 1.838 1.236 1.838 1.236 1.07 1.835 2.807 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.524.105-3.176 0 0 1.005-.322 3.3 1.23A11.53 11.53 0 0112 6.29c.99.005 1.98.133 2.91.39 2.29-1.552 3.295-1.23 3.295-1.23.645 1.652.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.895-.015 3.285 0 .315.18.69.795.57C20.565 21.79 24 17.3 24 12c0-6.63-5.37-12-12-12"/>
+                    </svg>
+                </a>
+            </div>
 
+            
+        </div>
+    </nav>
+    <div class="py-8 px-6 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <!-- Image Section -->
+        <div class="w-full md:w-1/2">
+            <img src="demo_img2.png" alt="Image 1" class="w-full rounded-lg shadow-md object-cover">
+        </div>
+    
+        <!-- Content Section -->
+        <div class="w-full md:w-1/2 bg-white shadow-xl rounded-lg p-8 md:p-10">
+            <h2 class="text-4xl font-extrabold text-gray-800 mb-8 border-b-4 border-gray-300 pb-4">
+                Portfolio Website
+            </h2>
+            <ul class="pl-6 list-disc space-y-6">
+                <li class="text-lg text-gray-600 hover:text-gray-900 transition-all duration-300">
+                    Create within a minute
+                </li>
+                <li class="text-lg text-gray-600 hover:text-gray-900 transition-all duration-300">
+                    No Code required (Directly through telegram)
+                </li>
+                <li class="text-lg text-gray-600 hover:text-gray-900 transition-all duration-300">
+                    Your own custom design
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mt-12 mx-auto max-w-4xl mb-4">
+        <video class="w-full rounded-lg shadow-lg" autoplay muted loop playsinline>
+            <source src="demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    
+
+    <footer class="bg-gray-900 text-white text-center px-4 py-4 flex justify-between">
+        <div class="p-1">&copy; 2024 programerr01. All rights reserved.</div>
+        <div class="p-1 pr-3">
+            <a href="https://github.com/programerr01/telegram_portfolio" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-400 transition duration-300">GitHub</a> 
+            <a href="https://t.me/pottefolio_bot" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-400 transition duration-300">Demo</a>
+        </div>
+    </footer>
 </html>
